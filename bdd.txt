@@ -1,0 +1,21 @@
+nom,N,E,zoom,icone,indice,decription
+Tour Eiffel,48.85833,2.294444,toureiffel.jpg
+Tour Montparnasse,48.84167,2.32222,
+Musée du Louvre,48.86111,2.335833,louvre.jpg
+Cité des Sciences,48.89556,2.388056,
+BNF François Mittérand,48.83361,2.375833,
+Arc de triomphe de l'Étoile,48.87389,2.295,
+Obélisque de Louxor,48.86556,2.321111,
+Fontaine Saint-Sulpice,48.85089,2.333444,Fontaine_Saint-Sulpice_Paris_2008-03-14.jpg,
+Le Monument de la République,
+Palais-Royal,48.86333,2.336944,260px-Palais_Royal,_Paris_8_September_2019.jpg
+Panthéon,4.846111,2.3458333,Pantheon_of_Paris_007.JPG,
+Palais Bourbon,48.86194,2.318611,260px-Palais_Bourbon,_Paris_7e,_NW_View_140402_1.jpg,
+Hôtel des Invalides,48.86,2.311944,Invalides_aerial_view.jpg,
+Observatoire de Paris,48.805,2.231111,Obs-Paris-coupole-Arago.jpg,
+Notre-Dame
+Saint-Chapelle
+Cimetierre Pierre-Lachaise
+Bois de Boulogne
+Bois de Vincennes
+
