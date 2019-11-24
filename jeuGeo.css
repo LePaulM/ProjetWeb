@@ -1,3 +1,101 @@
+body {
+  display:grid;
+  grid-template-columns: 200px 1fr 100px;
+  grid-template-rows: 50px 100px 100px 1fr;
+
+  background-color: grey;
+
+  font-family: Verdana;
+  font-size: 80%
+}   /* c'est peut-être mieux de faire 2 colonnes : une avec les regles, le nombre
+d'énigmes trouvées, et l'autre avec l'énigme en cours et la carte */
+
+#regle{
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;        /* permet de mettre la boite au départ en suivant le sens de lecture dans la case de la grid */
+  align-self: start;        /* permet de mettre la boite en haut de la case de la grid*/
+  width: 90%;        /* permet de controler la largeur d la boite*/
+  height: auto;        /* permet de controler la hauteur de la boite*/
+  margin: 10px;        /* permet de controler les marges externes de la boite*/
+  padding : 5px;        /* permet de controler les marges internes de la boite*/
+
+  background-color: 	#B0E0E6;     /* permet de changer la couleur de fond de la boite */
+
+  border: solid 2px black;        /*permet d'ajouter des bordures à la boite*/
+
+  border-radius: 5px;      /*fais des bords arrondis*/
+}
+
+#enigmeEnCours{
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  align-self: center;
+
+  width: 60%;
+  height: 100%;
+  margin: 10px;        /* permet de controler les marges externes de la boite*/
+  padding : 5px;        /* permet de controler les marges internes de la boite*/
+
+  background-color: 	#E0FFFF;
+
+  border-radius: 5px;      /*fais des bords arrondis*/
+}
+
+#nbTrouver{
+  grid-column: 3;
+  grid-row: 1;
+  justify-self : end;
+  align-self: center;
+  width: 150px;
+  height: 60%;
+  padding: 5px;
+
+  background-color: #DC143C;
+  color: #FFFFFF;
+
+  border-radius: 5px;
+  border: solid 2px black;
+}
+
+a{
+  grid-column: 1;
+  grid-row: 1;
+  justify-self : center;
+  align-self: center;
+}
+
+#reset{
+  width: 150px;
+  height: 45px;
+
+  font-size: 20px;
+
+  background-color: 	#B0C4DE;
+}
+
+#monumentTrouve{
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: start;        /* permet de mettre la boite au départ en suivant le sens de lecture dans la case de la grid */
+  align-self: center;        /* permet de mettre la boite en haut de la case de la grid*/
+  width: 90%;        /* permet de controler la largeur d la boite*/
+  height: auto;        /* permet de controler la hauteur de la boite*/
+  margin: 10px;        /* permet de controler les marges externes de la boite*/
+  padding : 5px;        /* permet de controler les marges internes de la boite*/
+
+  background-color: 	#D3D3D3;     /* permet de changer la couleur de fond de la boite */
+
+  border: solid 2px black;        /*permet d'ajouter des bordures à la boite*/
+
+  border-radius: 5px;      /*fais des bords arrondis*/
+}
+
 #map {
-  height: 540px;
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 3;
+  height: 530px;      /*lui préférer max-height si possible mais là ça marche pas*/
+
+  margin : 10px;
 }

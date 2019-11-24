@@ -1,4 +1,4 @@
-nom,N,E,zoom,icone,indice,decription
+nom,N,E,zoom,icone,enigme,decription
 Tour Eiffel,48.85833,2.294444,toureiffel.jpg
 Tour Montparnasse,48.84167,2.32222,
 Musée du Louvre,48.86111,2.335833,louvre.jpg
