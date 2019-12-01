@@ -23,11 +23,18 @@ body {
   align-self: center;
 }
 
-a{
+#pseudo {
   grid-column: 2;
   grid-row: 3;
   justify-self: center;
   align-self: center;
+}
+
+a{
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+  align-self: end;
 }
 
 #jouer{

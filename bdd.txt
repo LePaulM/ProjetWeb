@@ -1,21 +1,21 @@
-nom,N,E,zoom,icone,enigme,decription
-Tour Eiffel,48.85833,2.294444,toureiffel.jpg
-Tour Montparnasse,48.84167,2.32222,
-Musée du Louvre,48.86111,2.335833,louvre.jpg
-Cité des Sciences,48.89556,2.388056,
-BNF François Mittérand,48.83361,2.375833,
-Arc de triomphe de l'Étoile,48.87389,2.295,
-Obélisque de Louxor,48.86556,2.321111,
-Fontaine Saint-Sulpice,48.85089,2.333444,Fontaine_Saint-Sulpice_Paris_2008-03-14.jpg,
-Le Monument de la République,
-Palais-Royal,48.86333,2.336944,260px-Palais_Royal,_Paris_8_September_2019.jpg
-Panthéon,4.846111,2.3458333,Pantheon_of_Paris_007.JPG,
-Palais Bourbon,48.86194,2.318611,260px-Palais_Bourbon,_Paris_7e,_NW_View_140402_1.jpg,
-Hôtel des Invalides,48.86,2.311944,Invalides_aerial_view.jpg,
-Observatoire de Paris,48.805,2.231111,Obs-Paris-coupole-Arago.jpg,
-Notre-Dame
-Saint-Chapelle
-Cimetierre Pierre-Lachaise
-Bois de Boulogne
-Bois de Vincennes
-
+nom,N,E,zoom,enigme,icone
+"Tour Eiffel",48.85833,2.294444,"engime n°1","toureiffel.jpg"
+"Tour Montparnasse",48.84167,2.32222,"engime n°2"
+"Musée du Louvre",48.86111,2.335833,"engime n°3","louvre.jpg"
+"Cité des Sciences",48.89556,2.388056,"engime n°4","Cité_des_Sciences_et_de_l'Industrie_@_Parc_de_La_Villette_@_Paris_(28957995305).jpg"
+"BNF François Mittérand",48.83361,2.375833,"engime n°5","Bibliothèque_nationale_de_France_(site_Richelieu),_Paris_-_Salle_Ovale.jpg"
+"Arc de triomphe de l'Étoile",48.87389,2.295,"engime n°6","800px-Front_view_of_the_Arc_de_Triomphe,_Paris_23_February_2016.jpg"
+"Obélisque de Louxor",48.86556,2.321111,"engime n°7","327px-Obélisque_Louqsor_Concorde_a.jpg"
+"Fontaine Saint-Sulpice",48.85089,2.333444,"engime n°8","Fontaine_Saint-Sulpice_Paris_2008-03-14.jpg"
+"Le Monument de la République","engime n°9"
+"Palais-Royal",48.86333,2.336944,"engime n°10","260px-Palais_Royal_Paris_8_September_2019.jpg"
+"Panthéon",48.846111,2.3458333,"engime n°11","Pantheon_of_Paris_007.JPG"
+"Palais Bourbon",48.86194,2.318611,,"engime n°12","260px-Palais_Bourbon_Paris_7e_NW_View_140402_1.jpg"
+"Hôtel des Invalides",48.86,2.311944,Invalides_aerial_view.jpg,"engime n°13"
+"Observatoire de Paris",48.805,2.231111,"engime n°14","Obs-Paris-coupole-Arago.jpg"
+"Notre-Dame","engime n°15"
+"Saint-Chapelle","engime n°16"
+"Cimetierre Pierre-Lachaise","engime n°17"
+"Bois de Boulogne","engime n°18"
+"Bois de Vincennes","engime n°19"
+"Opéra Garnier","engime n°20"
