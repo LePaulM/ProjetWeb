@@ -1,5 +1,6 @@
 // Déclarer la carte (coord ecole :48.83889, 2.588889)
 var map = L.map('map').setView([48.80589, 2.238889],13);
+// les tuiles de la carte me mettent "Image corrupt or truncated."
 
 // Ajouter la couche "Carte"
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -126,7 +127,7 @@ countdownManager = {
       if (confirm("Oh non, le temps est écoulé!\n Voulez-vous recommencer?") == true){
           window.open("index.php","_self");
           //break;
-      } else {
+      } else if (confirm("Oh non, le temps est écoulé!\n Voulez-vous recommencer?") == false){
           window.open("intro.php","_self");
           //break;
       }
@@ -138,7 +139,7 @@ countdownManager = {
 		var diff = {}                           // Initialisation du retour
     //console.log('date1 : '+ date1);
     //console.log('date2 : '+ date2);
-    var tmp = date2 - date1 + 1200000 ; //1200000 correspondent à 20 minutes
+    var tmp = date2 - date1 + 1200000 ///60 ;  //1200000 correspondent à 20 minutes, 1200000 ms / 60 = 20s
 
 		tmp = Math.floor(tmp/1000);             // Nombre de secondes entre les 2 dates
 		diff.sec = tmp % 60;                    // Extraction du nombre de secondes
@@ -189,3 +190,14 @@ function onMonumentClick() {
   }
 
 };
+
+map.on('zoomend', function() {
+    var currentZoom = map.getZoom();
+    if (currentZoom < 15) {
+      map.removeLayer(monument);
+    }
+    else{
+      map.addLayer(monument);
+    }
+    console.log(map.getZoom());
+});

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/master/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet/master/leaflet.js"></script>
    <link rel= "stylesheet" href="jeuGeo.css"/>
+   <link rel="shortcut icon" href="earth-11008_1920.jpg" />
   </head>
   <body onload="init();">
     <?php /*

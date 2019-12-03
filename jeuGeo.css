@@ -3,6 +3,8 @@ body {
   grid-template-columns: 200px 1fr 100px 50px 200px;
   grid-template-rows: 50px 100px 50px 1fr 20px;
 
+  min-height: 530px;
+
   background-color: grey;
 
   font-family: Verdana;
@@ -110,7 +112,7 @@ a{
 #map {
   grid-column: 2 / span 4;
   grid-row: 2 / span 3;
-  height: 530px;      /*lui préférer max-height si possible mais là ça marche pas*/
+  height: auto;      /*lui préférer max-height si possible mais là ça marche pas*/
 
   margin : 10px;
 }
