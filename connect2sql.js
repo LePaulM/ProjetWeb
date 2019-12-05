@@ -1,5 +1,5 @@
-// config for your database
-var config = {
+// définition de la base de données
+var bdd = {
     user: 'database',
     password: 'mypassword',
     server: 'localhost', 
@@ -7,7 +7,7 @@ var config = {
 };
 
 // connect to your database
-sql.connect(config, function (err) {
+sql.connect(bdd, function (err) {
 
     if (err) console.log(err);
 
@@ -15,7 +15,7 @@ sql.connect(config, function (err) {
     var request = new sql.Request();
 
     // query to the database and get the records
-    request.query('select name from bdd', function (err, recordset) {
+    request.query('select nom from bdd', function (err, recordset) {
 
         if (err) console.log(err)
 
