@@ -1,5 +1,5 @@
 // Déclarer la carte (coord ecole :48.83889, 2.588889)
-var map = L.map('map').setView([48.80589, 2.238889],13);
+var map = L.map('map').setView([48.83889, 2.588889],15);
 // les tuiles de la carte me mettent "Image corrupt or truncated."
 
 // Ajouter la couche "Carte"
@@ -36,13 +36,17 @@ var nbClick = 0;
 // permettra de mettre à jour le nombre d'objets trouvés
 var nbClick = 0;
 
-var trouve = false;
+var necessaryZoom = 15;
 // permettra d'afficher les énigmes
 var enigmeSuivante = L.popup(autoClose = false);
 // permettra d'afficher 'Bravo! Tu as réussi à trouver ... !!' quand le joueur réussi une énigme
 var bravo = L.popup(autoClose = false);
 // permet d'accéder à l'objet en cours dans toutes les fonctions
 var bite = null;
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
 //map.on('click', onMapClick);   // permet d'appliquer la fonction ci-dessus
 function afficherIcone(bite) {
@@ -139,7 +143,7 @@ countdownManager = {
 		var diff = {}                           // Initialisation du retour
     //console.log('date1 : '+ date1);
     //console.log('date2 : '+ date2);
-    var tmp = date2 - date1 + 1200000 ///60 ;  //1200000 correspondent à 20 minutes, 1200000 ms / 60 = 20s
+    var tmp = date2 - date1 + 1200000 / 2 ;  //1200000 correspondent à 20 minutes, 1200000 ms / 60 = 20s
 
 		tmp = Math.floor(tmp/1000);             // Nombre de secondes entre les 2 dates
 		diff.sec = tmp % 60;                    // Extraction du nombre de secondes
@@ -183,17 +187,22 @@ function onMonumentClick() {
   monumentTrouve.append(p);
   map.removeLayer(monument);
   trouve = true;
-  if (nbClick < 5) {
-      tourJeu(tests[nbClick]);
-      //console.log('coucou');
-      monument.addEventListener('click', onMonumentClick);
+  if (nbClick < tests.length) {
+    necessaryZoom = Math.round(Math.random() * 15 + 4);
+    tourJeu(tests[nbClick]);
+    //console.log('coucou');
+    monument.addEventListener('click', onMonumentClick);
+  } else {
+    window.open("bravo.php","_self");
   }
 
 };
 
 map.on('zoomend', function() {
     var currentZoom = map.getZoom();
-    if (currentZoom < 15) {
+
+    console.log(necessaryZoom);
+    if (currentZoom < necessaryZoom) {
       map.removeLayer(monument);
     }
     else{
