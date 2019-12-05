@@ -15,7 +15,7 @@ sql.connect(config, function (err) {
     var request = new sql.Request();
 
     // query to the database and get the records
-    request.query('select * from Student', function (err, recordset) {
+    request.query('select * from bdd', function (err, recordset) {
 
         if (err) console.log(err)
 
