@@ -6,20 +6,20 @@ var bdd = {
     database: 'bdd.txt'
 };
 
-// connect to your database
+// connection à la database
 sql.connect(bdd, function (err) {
 
     if (err) console.log(err);
 
-    // create Request object
+    // création d'un objet requête
     var request = new sql.Request();
 
-    // query to the database and get the records
+    // Requête à la base de données
     request.query('select nom from bdd', function (err, recordset) {
 
         if (err) console.log(err)
 
-        // send records as a response
+        // affichage de la réponse
         res.send(recordset);
 
     });
