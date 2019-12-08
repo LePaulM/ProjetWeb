@@ -1,7 +1,7 @@
 # ProjetWeb
 Escape game géographique pour un projet de l'Ecole Nationale des Sciences Géographiques
 
-Tout d'abord il faut lancer la page intro.php, puis pour jouer il faut cliquer sur "jouer" sur cette page. Ensuite il faut retrouver les monuments parisiens qui apparaissent en foncion du zoom (le zoom nécessaire est généré aléatoirement) 
+Tout d'abord il faut lancer la page intro.php, puis pour jouer il faut cliquer sur "jouer" sur cette page. Ensuite il faut retrouver les monuments parisiens qui apparaissent en foncion du zoom (le zoom nécessaire est généré aléatoirement). Vous avez 10 minutes pour retrouver chaque monument, et à défaut vous perdez et une boite d'alerte apparait pour vous demander si vous voulez rejouer, si vous cliquez sur "OK" la partie se relance et si vous cliquez sur "Annuler" vous retournez à l'écran titre.
 
 
 Pour les solutions, dans la console on a la position des clics du joueur, et voici la position des objets à récupérer :
