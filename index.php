@@ -26,12 +26,12 @@
       <span> : </span>
     	<span id="countdown_sec" >--</span>
     </div>
-    <p id=nbTrouver>Nombre d'énigmes résolues : 0/20</p>
+    <p id=nbTrouver>Nombre d'énigmes résolues : 0/10</p>
     <a  href="index.php" title=""><input id=reset type="submit" name="jouer" value="Reset"></a>
     <p id=monumentTrouve><b>Monuments trouvés : </b></p>
     <div id=map> </div>
 
-    <footer id=footer>2018 - Paul Miancien - Enzo Corvi - ENSG<footer>
+    <footer id=footer>2019 - Paul Miancien - Enzo Corvi - ENSG<footer>
 
     <script src=jeuGeo.js></script>
   </body>

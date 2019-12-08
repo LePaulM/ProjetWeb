@@ -5,7 +5,7 @@ body {
 
   min-height: 530px;
 
-  background: center url('/louvre.jpg');
+  background: center url('louvre.jpg');
   background-size: auto;
   background-repeat: no-repeat;
 

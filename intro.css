@@ -3,7 +3,7 @@ body {
   grid-template-columns: 250px 1fr 250px;
   grid-template-rows: 200px 1fr 200px 100px;
 
-  background: center url('/toureiffel.jpg');
+  background: center url('toureiffel.jpg');
   background-size: auto;
   background-repeat: no-repeat;
 
